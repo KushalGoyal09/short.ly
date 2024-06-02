@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.loader {
+    @apply border-solid border-blue-500;
+    @apply animate-spin;
+}
