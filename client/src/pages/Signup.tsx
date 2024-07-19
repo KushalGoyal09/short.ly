@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 import { SubmitHandler, useForm } from "react-hook-form";
 import axios from "axios";
@@ -108,9 +107,18 @@ const Signup = () => {
                 Sign up
               </button>
             </div>
-            <div>{error && <p className="text-red-600">{error}</p>}
-            </div>{success && <div className="mb-4 text-green-500">{success}</div>}
-            <div>{success && <Link to="/" className="font-medium text-blue-500 hover:underline">Go to home page </Link>}</div>
+            <div>{error && <p className="text-red-600">{error}</p>}</div>
+            {success && <div className="mb-4 text-green-500">{success}</div>}
+            <div>
+              {success && (
+                <Link
+                  to="/"
+                  className="font-medium text-blue-500 hover:underline"
+                >
+                  Go to home page{" "}
+                </Link>
+              )}
+            </div>
           </form>
         </div>
       </div>

@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: _plugins,
   server: {
     proxy: {
-      '/api': "http://localhost:3000"
+      '/api': "https://backend-shorty.kushalgoyal.tech"
     }
   }
 });
