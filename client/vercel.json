@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/api/(.*)",
-      "destination": "https://backend-shorty.kushalgoyal.tech/$1"
+      "destination": "https://backend-shorty.kushalgoyal.tech/api/$1"
     },
     {
       "source": "/(.*)",
