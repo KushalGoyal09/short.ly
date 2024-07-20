@@ -4,7 +4,7 @@ import {
   useSetRecoilState,
 } from "recoil";
 import { authStatus, token } from "../store/userAtom";
-import { useNavigate } from "react-router-dom";
+import { useNavigate , Link} from "react-router-dom";
 import Logo from "./Logo";
 import { useEffect, useState } from "react";
 
@@ -59,9 +59,9 @@ const Navbar = () => {
             if (link.active) {
               return (
                 <li key={link.slug}>
-                  <a href={link.slug} className="hover:text-gray-300 text-lg">
+                  <Link to={link.slug} className="hover:text-gray-300 text-lg">
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               );
             }
