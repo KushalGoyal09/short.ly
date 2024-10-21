@@ -12,7 +12,6 @@ import {
 import Layout from "./Layout";
 import { RecoilRoot } from "recoil";
 import AllUrls from "./pages/AllUrls";
-import { ErrorBoundary } from "react-error-boundary";
 import Protected from "./components/AuthLayout";
 
 function App() {

@@ -6,3 +6,10 @@
     @apply border-solid border-blue-500;
     @apply animate-spin;
 }
+
+@layer base {
+  :root {
+
+        --radius: 0.5rem
+    }
+}
